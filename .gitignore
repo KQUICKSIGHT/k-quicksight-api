@@ -1,0 +1,14 @@
+*/pycache/*
+*/__pycache__/*
+**/__pycache__/**
+venv/
+.venv
+.env/development
+lib/
+# Django #
+*.log
+*.pot
+*.pyc
+__pycache__
+db.sqlite3
+media
