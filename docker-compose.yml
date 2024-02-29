@@ -6,10 +6,10 @@ services:
     command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
     container_name: k_test
     volumes:
-    - '/home/photostad/photostad-deployment-django-api/server/images:/workspace/images/'
-    - '/home/photostad/photostad-deployment-django-api/server/files:/workspace/files/'
-    - '/home/photostad/photostad-deployment-django-api/k_qicksight_app/:/workspace/app/'
-    - '/home/photostad/photostad-deployment-django-api/k-quicksight-scripts:/workspace/k-quicksight-scripts/'
+    - '/var/lib/jenkins/workspace/k-quicksight/server/images:/workspace/images/'
+    - '/var/lib/jenkins/workspace/k-quicksight/server/files:/workspace/files/'
+    - '/var/lib/jenkins/workspace/k-quicksight/k_qicksight_app/:/workspace/app/'
+    - '/var/lib/jenkins/workspace/k-quicksight/k-quicksight-scripts:/workspace/k-quicksight-scripts/'
 
     ports:
       - "8083:8000"
