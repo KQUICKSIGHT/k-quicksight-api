@@ -1,15 +1,20 @@
+# Example using a Debian-based image
+FROM python:3.8-slim
 
-# syntax=docker/dockerfile:1
-FROM python:3.10.6-slim-buster
+# Install git
+RUN apt-get update && apt-get install -y git
 
-RUN apt-get update && apt-get install -y libpq-dev gcc
-
+# Set the working directory in the container
 WORKDIR /app
 
-COPY requirements.txt requirements.txt
+# Copy the dependencies file to the working directory
+COPY requirements.txt .
 
+# Install any dependencies
 RUN pip install -r requirements.txt
 
+# Copy the rest of your application
 COPY . .
+
 
 CMD [ "python3", "manage.py", "runserver  --settings=k_qicksight_app.settings", "0.0.0.0:8000", "--noreload"]
