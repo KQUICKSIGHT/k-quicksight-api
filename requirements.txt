@@ -22,7 +22,7 @@ cycler==0.12.1
 defusedxml==0.8.0rc2
 distlib==0.3.8
 distro==1.9.0
-Django==5.0.1
+Django==4.2.10
 django-cors-headers==4.3.1
 django-extensions==3.2.3
 django-filter==23.5
