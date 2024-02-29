@@ -4,6 +4,8 @@ FROM python:3.8-slim
 # Install git
 RUN apt-get update && apt-get install -y git
 
+RUN apk add --no-cache git
+
 # Set the working directory in the container
 WORKDIR /app
 
