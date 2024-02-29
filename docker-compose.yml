@@ -12,4 +12,4 @@ services:
     - '/home/photostad/photostad-deployment-django-api/k-quicksight-scripts:/workspace/k-quicksight-scripts/'
 
     ports:
-      - "8002:8000"
+      - "8083:8000"
