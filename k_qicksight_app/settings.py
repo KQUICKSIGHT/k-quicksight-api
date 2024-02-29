@@ -22,8 +22,7 @@ SECRET_KEY = 'django-insecure-q359v@=&64%omv^gs1@)nurb=5_r*_q@jb^biz#paha=z7-g25
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.116', '136.228.158.126',"192.168.1.59"
-                 '127.0.0.1', 'localhost', 'photostad-api.istad.co',"192.168.1.139"]
+ALLOWED_HOSTS = ['localhost']
 
 
 # Application definition
