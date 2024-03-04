@@ -4,7 +4,7 @@ services:
   web:
     build: .
     command: bash -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
-    container_name: k_test
+    container_name: k-quicksight-api
     volumes:
     - '/var/lib/jenkins/workspace/k-quicksight/server/images:/workspace/images/'
     - '/var/lib/jenkins/workspace/k-quicksight/server/files:/workspace/files/'
