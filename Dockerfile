@@ -13,7 +13,7 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Install any dependencies
-RUN pip install -r requirements.txt --no-cache-dir
+RUN pip install -r requirements.txt
 
 # Copy the rest of your application
 COPY . .
