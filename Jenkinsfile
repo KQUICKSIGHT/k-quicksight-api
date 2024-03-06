@@ -19,7 +19,7 @@ pipeline {
 Project: K-QUICKSIGHT
 Environment: STAGE
 Version: 1.0.0
-URL: http://34.101.151.18:8083
+URL: http://34.101.151.18:8083/
 Deployed By: CHEA CHENTO
 
 Check out the latest version in action!
@@ -33,7 +33,7 @@ Check out the latest version in action!
 Project: K-QUICKSIGHT
 Environment: STAGE
 Version: 1.0.0
-URL: http://34.101.151.18:8083
+URL: http://34.101.151.18:8083/
 Attempted By: CHEA CHENTO
 
 Please check the logs and take the necessary action. Contact the team if the issue persists.
