@@ -14,7 +14,7 @@ pipeline {
  post {
             success {
                 sh """
-                curl -s -X POST https://api.telegram.org/bot7082427729:AAElAcSJXbrLXTupwFlja_k_ukBbt7lp9Aw/sendMessage chat_id=-4110018997 -d text='
+                curl -s -X POST https://api.telegram.org/bot7082427729:AAElAcSJXbrLXTupwFlja_k_ukBbt7lp9Aw/sendMessage -d chat_id=-4110018997 -d text='
                     🎉 *Deployment Success API* 🎉
 Project: K-QUICKSIGHT
 Environment: STAGE
@@ -28,7 +28,7 @@ Check out the latest version in action!
             }
             failure {
                 sh """
-                curl -s -X POST https://api.telegram.org/bot7082427729:AAElAcSJXbrLXTupwFlja_k_ukBbt7lp9Aw/sendMessage chat_id=-4110018997 -d text='
+                curl -s -X POST https://api.telegram.org/bot7082427729:AAElAcSJXbrLXTupwFlja_k_ukBbt7lp9Aw/sendMessage -d chat_id=-4110018997 -d text='
                     ⚠️ *Deployment Failure API* ⚠️
 Project: K-QUICKSIGHT
 Environment: STAGE
