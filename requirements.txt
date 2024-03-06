@@ -81,7 +81,6 @@ plotly==5.19.0
 poetry==1.8.1
 poetry-core==1.9.0
 poetry-plugin-export==1.6.0
-psycopg2==2.9.9
 psycopg2-binary==2.9.9
 ptyprocess==0.7.0
 pyasn1==0.5.1
